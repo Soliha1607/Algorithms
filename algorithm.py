@@ -59,16 +59,16 @@ sorted_words = bubble_sort(words.copy())
 print(f"Binary Search for {target_number}: Index", binary_search(sorted_numbers, target_number))
 print(f"Binary Search for '{target_word}': Index", binary_search(sorted_words, target_word))
 
-# 
-# # 5. Quick Sort
-# def quick_sort(arr):
-#     if len(arr) <= 1:
-#         return arr
-#     pivot = arr[len(arr) // 2]
-#     left = [x for x in arr if x < pivot]
-#     middle = [x for x in arr if x == pivot]
-#     right = [x for x in arr if x > pivot]
-#     return quick_sort(left) + middle + quick_sort(right)
-#
-# print("Quick Sort numbers:", quick_sort(numbers.copy()))
-# print("Quick Sort words:", quick_sort(words.copy()))
+
+# 5. Quick Sort
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + middle + quick_sort(right)
+
+print("Quick Sort numbers:", quick_sort(numbers.copy()))
+print("Quick Sort words:", quick_sort(words.copy()))
