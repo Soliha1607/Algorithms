@@ -40,25 +40,25 @@ print(f"Linear Search for {target_number}: Index", linear_search(numbers, target
 target_word = 'date'
 print(f"Linear Search for '{target_word}': Index", linear_search(words, target_word))
 
-# # 3. Binary Search (assumes arr is sorted)
-# def binary_search(arr, x):
-#     low = 0
-#     high = len(arr) - 1
-#     while low <= high:
-#         mid = (low + high) // 2
-#         if arr[mid] == x:
-#             return mid
-#         elif arr[mid] < x:
-#             low = mid + 1
-#         else:
-#             high = mid - 1
-#     return -1
-#
-# sorted_numbers = bubble_sort(numbers.copy())
-# sorted_words = bubble_sort(words.copy())
-# print(f"Binary Search for {target_number}: Index", binary_search(sorted_numbers, target_number))
-# print(f"Binary Search for '{target_word}': Index", binary_search(sorted_words, target_word))
-#
+# 3. Binary Search (assumes arr is sorted)
+def binary_search(arr, x):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == x:
+            return mid
+        elif arr[mid] < x:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+
+sorted_numbers = bubble_sort(numbers.copy())
+sorted_words = bubble_sort(words.copy())
+print(f"Binary Search for {target_number}: Index", binary_search(sorted_numbers, target_number))
+print(f"Binary Search for '{target_word}': Index", binary_search(sorted_words, target_word))
+
 # 
 # # 5. Quick Sort
 # def quick_sort(arr):
