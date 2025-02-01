@@ -28,18 +28,18 @@ print("Selection Sort numbers:", selection_sort(numbers.copy()))
 print("Selection Sort words:", selection_sort(words.copy()))
 
 
-# # 3. Linear Search
-# def linear_search(arr, x):
-#     for i in range(len(arr)):
-#         if arr[i] == x:
-#             return i  # return the index of the element
-#     return -1  # return -1 if not found
-#
-# target_number = 22
-# print(f"Linear Search for {target_number}: Index", linear_search(numbers, target_number))
-# target_word = 'date'
-# print(f"Linear Search for '{target_word}': Index", linear_search(words, target_word))
-#
+# 3. Linear Search
+def linear_search(arr, x):
+    for i in range(len(arr)):
+        if arr[i] == x:
+            return i  # return the index of the element
+    return -1  # return -1 if not found
+
+target_number = 22
+print(f"Linear Search for {target_number}: Index", linear_search(numbers, target_number))
+target_word = 'date'
+print(f"Linear Search for '{target_word}': Index", linear_search(words, target_word))
+
 # # 3. Binary Search (assumes arr is sorted)
 # def binary_search(arr, x):
 #     low = 0
